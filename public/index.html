@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   
+  
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="manifest.json"></link>
+  <!-- Path to manifest.json -->
+<link rel="manifest" href="/manifest.json">
+
+
+
+
+<meta name="theme-color" content="#0A0302">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prabandh">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRABANDH</title>
+  <title>PRABANDH</title>
+  <script defer data-domain="ourprabandh" src="https://plausible.io/js/plausible.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  
+      
+  
+<link rel="stylesheet" href="register.css">
+
+</head>
+
+  <body>
+      <nav class="navbar navbar-dark " style="background-color:darkblue;">
+          <div class="container-fluid">
+            <div class="me-4 mx-3">
+              
+
+              
+              <b>
+              <a href="/" class="navbar-brand" style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px yellow;">
+              PRABANDH</a>
+                </b>
+            
+            </div>
+            <form class="d-flex" method='get' action='/search/1'>
+              <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" name="search" id="search">
+
+              <button class="btn btn-outline-warning" type="submit" ><a href="/search/1" style="color:white; text-decoration: none;" >Search </a></button>
+            </form>
+
+            
+            <div class="color">
+              <a href="/noti" style="color:white;text-decoration:none;" class="mx-2"><i data-feather="bell"></i>()</a>
+
+              
+                
+                <a href="/user/" class="text-decoration-none" style="color: white">Sign Up</a>
+                <span style="color: white">/</span>
+                <a href="/user/login" class="text-decoration-none" style="color: white">Login</a>
+
+              
+            </div>
+          </div>
+      </nav>
+
+
+  
+<div class="container">
+    <!-- Just Checking -->
+    <div class="row top no-gutters justify-content-center">
+        <div class="col-lg-5 col-sm-12 super">
+            <div class="col-lg-12 below-right no-gutters">
+            </div>
+            <div class="col-lg-12 cover-right no-gutters">
+                
+            </div>
+        </div>
+        <div class="col-lg-5 left">
+            <div class="container-left container col-lg-12 col-sm-12">
+                <div class="container col-lg-10">
+                    <div class="row register-heading">
+                        <h3>Register</h3>
+                    </div>
+                    <div class="row top-left side-row ">
+                        <form method="POST">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="bwP2rkm7s9mn22D6YM9MmsfJZe86ZvZ1yIK4uzx0l7dnlOt2ZUreL5N8O1Dtl4NE">   
+                                <div class="form-group">
+                                <div class="fieldWrapper">
+                                    <label for="id_username" class="down">Username</label>
+                                    <input type="text" name="username" class="form-control textinput" onfocus="move()" autocomplete="off" maxlength="150" autofocus required id="id_username">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                        <label for="id_email" class="down">Email</label>
+                                        <input type="email" name="email" class="form-control textinput" onclick="move()" maxlength="254" id="id_email">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <label for="id_password1" class="down">Password</label>
+                                    <input type="password" name="password1" class="form-control textinput" align="center" required id="id_password1">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <label for="id_password2"class="down">Confirm Password</label>
+                                    <input type="password" name="password2" class="form-control textinput" align="center" required id="id_password2">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <label for="id_bank_acc_no"class="down">Bank account number</label>
+                                    <input type="number" name="bank_acc_no" class="form-control textinput" maxlength="16" required id="id_bank_acc_no">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <label for="id_ifsc"class="down">IFSC</label>
+                                    <input type="text" name="ifsc" class="form-control textinput" maxlength="11" required id="id_ifsc">
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <label for="id_address"class="down">Address</label>
+                                    <textarea name="address" cols="40" rows="3" class="form-control textinput textareaclass" required id="id_address">
+</textarea>
+                                </div>
+                                
+                                <div class="fieldWrapper">
+                                    <br>
+                                    <label for="id_seller" style="font-weight: bold;">Want to be a Seller?</label>&nbsp
+                                    <input type="checkbox" name="seller" class="form-check-input" onclick="changeText()" id="id_seller">
+                                </div>
+                                
+                                <br>
+                                <div class="fieldWrapper">
+                                    <p class="text-muted" style="font-weight: bold;">By clicking on below button, you agree with our <a href='#'>Terms and Conditions</a></p>
+                                </div>
+                                <button class="btn btn-info" type="submit">Submit</button>
+                                </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+        
+<script src="register.js"></script>
+    <script>
+        function move(){
+            console.log("la");
+        }
+    </script>
+
+<script>
+  window.addEventListener('load', async () => {
+    if ('serviceWorker' in navigator) {
+      try {
+        const registration = await navigator.serviceWorker.register('/sw.js');
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        const notificationPermission = await Notification.requestPermission();
+        if (notificationPermission !== 'granted') {
+          console.log('Notification permission not granted');
+        } else {
+          const title = 'Test Notification';
+          const options = {
+            body: 'Do you like this ?',
+            icon: 'icon.png',
+            vibrate: [200, 100, 200, 100, 200, 100, 400],
+            tag: 'request',
+            actions: [
+              { action: 'yes', title: 'Yes', icon: 'icon.png' },
+              { action: 'no', title: 'No', icon: 'icon.png' }
+            ]
+          };
+          const res = await registration.showNotification(title, options);
+          console.log(res);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+  });
+</script>
+    </body>
+</html>
